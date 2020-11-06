@@ -1,0 +1,136 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scoreTask {
+  display: grid;
+  place-items: center;
+  animation: fadeIn 0.5s;
+  width: 90%;
+  margin: 100px 0;
+}
+
+.scoreTask__content {
+  background-color: white;
+  padding: 20px;
+  width: fit-content;
+}
+
+.scoreTask h3 {
+  margin: 0;
+  text-align: center;
+  /* color: white; */
+}
+
+.scoreTask form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scoreTask form input {
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+}
+
+.scoreTask form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+}
+
+.scoreTask form button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #70bd44;
+  color: white;
+  border: 1px solid #70bd44;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scoreTask form button:hover {
+  background-color: transparent;
+  color: #70bd44;
+}
+
+.scoreTask__allImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0;
+  width: 90%;
+  height: 100%;
+}
+
+.scoreTask__allImages img {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.scoreTask__allImages img:hover {
+  transform: scale(1.08);
+}
+
+.scoreTask__backdrop {
+  z-index: 1200 !important;
+  color: #70bd44;
+}
+
+.scoreTask__modal {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  gap: 1rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreTask__modal form {
+  padding: 0 20px;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreTask__modal img {
+  width: 46%;
+}
+
+/* .scoreTask__select {
+  width: 50%;
+} */
+
+.scoreTask__input {
+  /* width: fit-content; */
+  margin: 20px 0 !important;
+}
+
+.scoreTask__modal form button {
+  border: none;
+  width: fit-content;
+  padding: 8px 12px;
+  color: white;
+  background-color: #3f51b5;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}

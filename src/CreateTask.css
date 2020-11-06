@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.createTask {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  animation: fadeIn 0.5s;
+}
+
+.createTask h3 {
+  margin: 0;
+  text-align: center;
+  /* color: white; */
+}
+
+.createTask form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createTask form input {
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+}
+
+.createTask form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+}
+
+.createTask form button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #70bd44;
+  color: white;
+  border: 1px solid #70bd44;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.createTask form button:hover {
+  background-color: transparent;
+  color: #70bd44;
+}
